@@ -1425,7 +1425,7 @@ button:hover a {
 ## Breadcrumb_Section_Style
 ----------------------------------------------------------------*/
 .sec-breadcrumb {
-  background-image: url(/assets/img/s-hero.jpg);
+  background-image: url(/assets/img/bg-all.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -2796,4 +2796,10 @@ button:hover a {
   }
 }
 
+.mission-box{
+  background-color: #181818;
+}
+.vission-box{
+  background-color: #393939;
+}
 /*# sourceMappingURL=style.css.map */
