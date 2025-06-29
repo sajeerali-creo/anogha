@@ -377,3 +377,41 @@ button:hover{
     }
   }
   
+
+
+  // loading
+  /* Loading Screen Styles */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .loader {
+      width: 60px;
+      height: 60px;
+      border: 6px solid #ccc;
+      border-top-color: #007bff;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Hide preloader when loaded */
+    body.loaded #preloader {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease;
+    }

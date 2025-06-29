@@ -251,3 +251,10 @@ anime.timeline({loop: true})
   });
 
 
+// loading
+ window.addEventListener("load", () => {
+      // Delay before removing preloader (e.g., 2000ms = 2 seconds)
+      setTimeout(() => {
+        document.body.classList.add("loaded");
+      }, 2000);
+    });

@@ -19,11 +19,22 @@
 </head>
 <body>
 
-  <!-- Start Preloader-->
-  <div class="loader">
-    <div class="cs-loader-line"></div>
+  <!-- PAGE LOADER : PLACE RIGHT AFTER BODY TAG -->
+  <div id="preloader">
+    <div class="loader" id="animation container">
+      <script>
+        var animation = bodymovin.loadAnimation({
+          container: document.getElementById('animation container'),
+          path: 'scene.json',
+          render: 'svg',
+          loop: true,
+          autoplay: true,
+          name: 'animation'
+        })
+      </script>
+    </div>
   </div>
-  <!-- End Preloader-->
+  <!-- PAGE LOADER END : PLACE RIGHT AFTER BODY TAG -->
 
   <!-- Start Navbar Section -->
   <header class="cs-site-navbar cs-navbar-style cs_sticky_header">
